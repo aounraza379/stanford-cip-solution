@@ -1,13 +1,15 @@
+PROMPT = "What do you want? "
+JOKE = "Here is a joke for you! Karel is heading out to the grocery store. A programmer tells her: get a liter of milk, and if they have eggs, get 12. Karel returns with 13 liters of milk. The programmer asks why and Karel replies: 'because they had eggs'"
+SORRY = "Sorry I only tell jokes"
+
 def main():
-    """
-    You should write your code here. 
-    """
-    curr_value = int(input("Enter a number: "))
-
-    while curr_value <= 100: 
-        curr_value = curr_value * 2
-        print(curr_value)
+    user_input = input('What do you want? ')
+    
+    if user_input == "Joke":
+        print("Here is a joke for you! Karel is heading out to the grocery store. A programmer tells her: get a liter of milk, and if they have eggs, get 12. Karel returns with 13 liters of milk. The programmer asks why and Karel replies: 'because they had eggs'")
+    else:
+        print('Sorry I only tell jokes')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
